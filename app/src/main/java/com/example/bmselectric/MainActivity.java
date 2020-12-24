@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         if(em.isEmpty()){
             Toast.makeText(MainActivity.this,"Entre your @ email !!",Toast.LENGTH_SHORT).show();
             return;
-
         }
        /* FirebaseAuth auth= FirebaseAuth.getInstance();
         auth.sendPasswordResetEmail(em).addOnCompleteListener(new OnCompleteListener<Void>() {

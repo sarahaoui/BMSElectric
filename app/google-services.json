@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "140017021694",
+    "firebase_url": "https://bmselectriq-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "bmselectriq",
+    "storage_bucket": "bmselectriq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140017021694:android:c1aaff4f00491cf6a26baf",
+        "android_client_info": {
+          "package_name": "com.example.bmselectric"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140017021694-5m12d6af56ucu1s2np6ts1hk76r61qka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbj_dd6a3JX71SqfxKM-X3DlO8NP5hVtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140017021694-5m12d6af56ucu1s2np6ts1hk76r61qka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140017021694:android:be8b5076170d2d52a26baf",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140017021694-5m12d6af56ucu1s2np6ts1hk76r61qka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbj_dd6a3JX71SqfxKM-X3DlO8NP5hVtE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140017021694-5m12d6af56ucu1s2np6ts1hk76r61qka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
