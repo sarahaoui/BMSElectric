@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     TextInputLayout email,password;
-    Button login;
+    Button login,facbookLogin;
     String em,pass;
     FirebaseAuth auth;
 
@@ -33,15 +33,11 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
+        facbookLogin = (Button) findViewById(R.id.button8);
         auth = FirebaseAuth.getInstance();
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent().setClass(getApplicationContext(),Main_Page.class);
-                startActivity(intent);
-            }
-        });
+
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,5 +98,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
+    }
+
+    public void loginwithfacebook(View view) {
+        Intent intent= new Intent(this,Main_Page.class);
+        startActivity(intent);
     }
 }

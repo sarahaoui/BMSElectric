@@ -21,8 +21,8 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class Signup extends AppCompatActivity {
     FirebaseAuth auth;
-    TextInputLayout username,lastname,email,password;
-    Button signup;
+    TextInputLayout firstname,lastname,email,password;
+    Button signup,back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,17 +30,18 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        username = findViewById(R.id.firstName);
-        lastname = findViewById(R.id.lastname);
-        email = findViewById(R.id.email);
-        password = findViewById(R.id.password);
-        signup = findViewById(R.id.signup);
+        firstname = (TextInputLayout) findViewById(R.id.firstName);
+        lastname = (TextInputLayout) findViewById(R.id.lastname);
+        email = (TextInputLayout) findViewById(R.id.email);
+        password = (TextInputLayout) findViewById(R.id.password);
+        signup = (Button)findViewById(R.id.signup);
+        back = (Button) findViewById(R.id.back);
         auth = FirebaseAuth.getInstance();
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String text_username = username.getEditText().getText().toString();
+                String text_username = firstname.getEditText().getText().toString();
                 String text_email = email.getEditText().getText().toString();
                 String text_password = password.getEditText().getText().toString();
                 if(TextUtils.isEmpty(text_email) || TextUtils.isEmpty(text_password) || TextUtils.isEmpty(text_username)){
@@ -71,7 +72,7 @@ public class Signup extends AppCompatActivity {
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
                             UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                                    .setDisplayName(username.getEditText().getText().toString())
+                                    .setDisplayName(firstname.getEditText().getText().toString())
                                     .build();
 
                             Toast.makeText(Signup.this, "Registration successful", Toast.LENGTH_SHORT).show();
