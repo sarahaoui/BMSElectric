@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent().setClass(getApplicationContext(),Main_Page.class);
+                startActivity(intent);
+            }
+        });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 String text_email = email.getEditText().getText().toString();
                 String text_password = password.getEditText().getText().toString();
                 if(TextUtils.isEmpty(text_email) || TextUtils.isEmpty(text_password)){

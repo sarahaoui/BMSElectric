@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "140017021694-hnjsj23i779dk24or4ga2tbq93tqdmq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bmselectric",
+            "certificate_hash": "83173295e2aac118601fc772b48eee91108c2e20"
+          }
+        },
+        {
           "client_id": "140017021694-5m12d6af56ucu1s2np6ts1hk76r61qka.apps.googleusercontent.com",
           "client_type": 3
         }

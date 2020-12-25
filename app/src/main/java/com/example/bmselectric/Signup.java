@@ -21,7 +21,7 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class Signup extends AppCompatActivity {
     FirebaseAuth auth;
-    TextInputLayout username,email,password;
+    TextInputLayout username,lastname,email,password;
     Button signup;
 
     @Override
@@ -30,7 +30,8 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        username = findViewById(R.id.username);
+        username = findViewById(R.id.firstName);
+        lastname = findViewById(R.id.lastname);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         signup = findViewById(R.id.signup);
