@@ -58,8 +58,9 @@ public class Signup extends AppCompatActivity {
     }
 
     public void back(View view) {
-        Intent intent= new Intent(this,Signup.class);
+        Intent intent= new Intent(this,MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     private void RegisterUser(String email, String password) {
@@ -76,9 +77,12 @@ public class Signup extends AppCompatActivity {
                                     .build();
 
                             Toast.makeText(Signup.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                            Intent intent= new Intent(Signup.this,Main_Page.class);
+                            startActivity(intent);
+                            finish();
                         }
                         else{
-                            Toast.makeText(Signup.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Signup.this, "Registration failed try again !!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
