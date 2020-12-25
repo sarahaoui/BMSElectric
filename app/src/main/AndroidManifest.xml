@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main_Page"></activity>
-        <activity android:name=".Activity1" />
+        <activity android:name=".Main_Page" android:theme="@style/AppTheme.NoActionbar"></activity>
+        <activity android:name=".Activity1" android:theme="@style/AppTheme.NoActionbar" />
         <activity
             android:name=".Signup"
             android:theme="@style/AppTheme.NoActionbar" />
