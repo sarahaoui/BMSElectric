@@ -11,7 +11,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     TextInputLayout email,password;
-    Button login,facbookLogin;
+    Button login;
     String em,pass;
     FirebaseAuth auth;
 
@@ -33,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
-        facbookLogin = (Button) findViewById(R.id.button8);
         auth = FirebaseAuth.getInstance();
 
 
@@ -73,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(AuthResult authResult) {
                 Toast.makeText(MainActivity.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
+                Intent intent= new Intent(MainActivity.this,Main_Page.class);
+                startActivity(intent);
             }
         });
     }
@@ -84,24 +87,21 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,"Entre your @ email !!",Toast.LENGTH_SHORT).show();
             return;
         }
-       /* FirebaseAuth auth= FirebaseAuth.getInstance();
+        FirebaseAuth auth= FirebaseAuth.getInstance();
         auth.sendPasswordResetEmail(em).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(Login.this,"Success",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_SHORT).show();
 
                 }else
-                    Toast.makeText(Login.this,"Failure:"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Failure:"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
 
 
             }
-        });*/
+        });
 
     }
 
-    public void loginwithfacebook(View view) {
-        Intent intent= new Intent(this,Main_Page.class);
-        startActivity(intent);
-    }
+
 }
