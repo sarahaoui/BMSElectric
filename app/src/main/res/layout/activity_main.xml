@@ -22,87 +22,87 @@
     </LinearLayout>
 
 
-        <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-            android:gravity="right"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
 
-            android:layout_marginRight="20dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="120dp">
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="120dp">
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="Register"
-                android:onClick="creatcompte"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                android:background="@android:color/transparent"
-                android:textColor="@color/colorAccent"
-                android:fontFamily="@font/poppins_bold" /></LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Register"
+            android:onClick="creatcompte"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/poppins_bold" /></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        >
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingBottom="10dp"
-            android:gravity="center_horizontal"
-            >
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/email"
-                android:textColorHint="@color/colorAccent"
-                app:boxStrokeColor="#00BCD4"
-                android:textColorHighlight="#00BCD4"
-                android:textColorLink="@color/colorAccent"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Email address"
-                >
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textColorHint="@color/colorAccent"
-                    android:textSize="14sp"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:paddingLeft="15dp"
+            android:id="@+id/email"
             android:textColorHint="@color/colorAccent"
-            android:paddingRight="15dp"
-            android:paddingBottom="40dp">
-            <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="#00BCD4"
+            android:textColorHighlight="#00BCD4"
+            android:textColorLink="@color/colorAccent"
+            style="@style/Theme.MaterialComponents"
+            android:hint="Email address"
+            >
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/password"
-                app:boxStrokeColor="#00BCD4"
-                android:textColorHighlight="#00BCD4"
-                android:textColorLink="@color/colorAccent"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Password"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColorHint="@color/colorAccent"
-                app:passwordToggleEnabled="true">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:inputType="textPassword"
-                    android:textSize="14sp" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:textSize="14sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/colorAccent"
+        android:paddingRight="15dp"
+        android:paddingBottom="40dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            app:boxStrokeColor="#00BCD4"
+            android:textColorHighlight="#00BCD4"
+            android:textColorLink="@color/colorAccent"
+            style="@style/Theme.MaterialComponents"
+            android:hint="Password"
+            android:textColorHint="@color/colorAccent"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
 
 
     <LinearLayout
@@ -178,7 +178,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="7dp"
-
+            android:onClick="loginwithfacebook"
             android:background="@drawable/facebook"/>
 
         <Button

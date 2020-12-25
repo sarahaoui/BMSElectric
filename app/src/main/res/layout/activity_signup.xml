@@ -37,7 +37,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/firstName"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Theme.MaterialComponents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="First Name"
@@ -70,7 +70,7 @@
             app:boxStrokeColor="#00BCD4"
             android:textColorHighlight="#00BCD4"
             android:textColorLink="@color/colorAccent"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Theme.MaterialComponents"
             android:hint="Last Name"
             >
 
@@ -100,7 +100,7 @@
             app:boxStrokeColor="#00BCD4"
             android:textColorHighlight="#00BCD4"
             android:textColorLink="@color/colorAccent"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Theme.MaterialComponents"
             android:hint="Email address"
             >
 
@@ -124,8 +124,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/password"
             app:boxStrokeColor="#00BCD4"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Theme.MaterialComponents"
             android:hint="Password"
             android:textColorHint="@color/colorAccent"
             app:passwordToggleEnabled="true">
